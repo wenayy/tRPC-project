@@ -14,12 +14,19 @@ async function main() {
 
   try {
     const result = await trpc.todo.createTodo.mutate({
+
       title: "Hit the gym",
       description: "Morning workout session",
     });
+    const token=await trpc.signupRoute.signupProcedure.mutate({
+      name:"vinay",
+      email:"vinay@gmail.com",
+      password:"123456789"
+    })
+    
 
-    console.log("✅ Response from server:", result);
-  } catch (err) {
+    console.log("✅ Response from server:", result, token);
+  } catch (err) { 
     console.error("❌ Error calling server:", err);
   }
 }
