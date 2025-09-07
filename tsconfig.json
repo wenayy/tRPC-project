@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+    
+    "module": "commonjs",  // Changed from "nodenext"
+    "target": "es2020",    // Changed from "esnext"
+    "types": ["node"],     // Added node types
+    
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    
+    "strict": true,
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  }
+}
